@@ -19,7 +19,7 @@
 словом. Додай оформлення елементів інтерфейсу. Подивись демо-відео роботи
 застосунку.
 
-(video)[https://user-images.githubusercontent.com/17479434/125040406-49a6f600-e0a0-11eb-975d-e7d8eaf2af6b.mp4]
+[video](https://user-images.githubusercontent.com/17479434/125040406-49a6f600-e0a0-11eb-975d-e7d8eaf2af6b.mp4)
 
 #### Форма пошуку
 
