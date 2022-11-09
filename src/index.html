@@ -14,9 +14,19 @@
         autocomplete="off"
         placeholder="Search images..."
       />
-      <button type="submit">Search</button>
+      <button type="submit" class="btn">Search</button>
     </form>
 
-    <script type="module" src="./js/index.js"></script>
+    <div class="container gallery"></div>
+
+    <button type="button" class="load-more btn btn-primary">
+      Load more
+
+      <div class="btn-loader">
+        <span class="spinner" role="status" aria-hidden="true"></span>
+      </div>
+    </button>
+
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
