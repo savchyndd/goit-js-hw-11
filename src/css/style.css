@@ -110,7 +110,7 @@ body {
 .btn-loader:before {
   animation: dot1 1.2s infinite ease-in-out both;
 }
-span {
+btn-loader > span {
   display: inline-block;
   height: 5px;
   width: 5px;
@@ -195,7 +195,7 @@ span {
 
   margin-top: var(--scroll-content-margin);
   gap: 12px;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 .gallery__item {
