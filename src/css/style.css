@@ -18,8 +18,12 @@ a {
   color: inherit;
 }
 
-button {
+button,
+input {
   border: 0;
+  padding: 8px;
+
+  font-family: inherit;
 }
 
 img {
@@ -30,8 +34,9 @@ img {
 }
 
 body {
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
   font-style: normal;
+  font-weight: 400;
   line-height: 100%;
 
   padding: 24px;
@@ -45,7 +50,6 @@ body {
   left: 0;
   top: 0;
   z-index: 1;
-  padding: 24px;
   width: 100%;
   background: linear-gradient(138.13deg, #22343cae 25.87%, #1f2e35b1 100%);
 }
@@ -156,10 +160,10 @@ btn-loader > span {
     opacity: 0;
   }
   16.66% {
-    opacity: 0;
+    opacity: 1;
   }
   50% {
-    opacity: 1;
+    opacity: 0;
   }
   83.33% {
     opacity: 0;
@@ -177,10 +181,10 @@ btn-loader > span {
     opacity: 0;
   }
   50% {
-    opacity: 0;
+    opacity: 1;
   }
   83.33% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 0;
@@ -270,4 +274,33 @@ btn-loader > span {
 
 .is-hidden {
   display: none;
+}
+
+.page-load-status {
+  font-style: italic;
+  font-weight: 700;
+  line-height: 100%;
+
+  padding-top: 20px;
+  text-align: center;
+  color: #899a96;
+}
+
+.loader-ellips > span {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  margin: 0px calc(10px / 2);
+  border-radius: 50%;
+  background: #899a96;
+}
+
+.loader-ellips > span:first-child {
+  animation: dot1 1.2s infinite ease-in-out both;
+}
+.loader-ellips > span {
+  animation: dot2 1.2s infinite ease-in-out both;
+}
+.loader-ellips > span:last-child {
+  animation: dot3 1.2s infinite ease-in-out both;
 }
